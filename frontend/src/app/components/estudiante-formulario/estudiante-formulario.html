@@ -1,0 +1,7 @@
+<h2>Agregar Estudiante</h2>
+<form (ngSubmit)="crearEstudiante()">
+  <label>Nombre: <input type="text" [(ngModel)]="estudiante.nombre" name="nombre" required /></label><br>
+  <label>Email: <input type="email" [(ngModel)]="estudiante.email" name="email" required /></label><br>
+  <label>Edad: <input type="number" [(ngModel)]="estudiante.edad" name="edad" required /></label><br>
+  <button type="submit">Agregar</button>
+</form>

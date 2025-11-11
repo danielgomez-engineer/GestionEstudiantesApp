@@ -4,5 +4,5 @@ public interface EstudianteProyeccion {
 
     Long getId();
     String getNombre();
-    String getemail();
+    String getEmail();
 }

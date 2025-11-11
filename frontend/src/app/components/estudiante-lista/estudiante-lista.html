@@ -1,0 +1,23 @@
+<h2>Lista de Estudiantes</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Edad</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (estudiante of estudiantes; track estudiante.id) {
+      <tr>
+        <td>{{ estudiante.id }}</td>
+        <td>{{ estudiante.nombre }}</td>
+        <td>{{ estudiante.email }}</td>
+        <td>{{ estudiante.edad }}</td>
+        <td><button (click)="eliminarEstudiante(estudiante.id)">Eliminar</button></td>
+      </tr>
+    }
+  </tbody>
+</table>
